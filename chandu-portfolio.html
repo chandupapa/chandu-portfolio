@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D. Chandana | Portfolio</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color:white;
+    scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:100%;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.1);
+    z-index:1000;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd6ff;
+}
+
+section{
+    min-height:100vh;
+    padding:120px 10%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+/* GLASS CARD */
+.glass{
+    background: rgba(255,255,255,0.1);
+    border-radius:20px;
+    padding:30px;
+    backdrop-filter: blur(15px);
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+    margin:20px 0;
+    transition:0.4s;
+}
+
+.glass:hover{
+    transform:translateY(-10px);
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+}
+
+.hero img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:4px solid rgba(255,255,255,0.4);
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:40px;
+    font-weight:700;
+}
+
+.hero h3{
+    font-weight:300;
+    margin:10px 0;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 25px;
+    margin:10px;
+    border-radius:30px;
+    background:rgba(255,255,255,0.2);
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+    color:#764ba2;
+}
+
+/* SKILLS GRID */
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap:20px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.2);
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>D. Chandana</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="hero">
+    <img src="https://via.placeholder.com/150" alt="Profile Picture">
+    <h1>D. Chandana</h1>
+    <h3>B.Tech Student | Artificial Intelligence & Data Science</h3>
+    <p>Passionate AI & Data Science student at Annamacharya College, Tirupati.</p>
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="#contact" class="btn">Contact Me</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="glass">
+        <h2>About Me</h2>
+        <p>B.Tech in Artificial Intelligence & Data Science, Annamacharya College (2027). Currently a 3rd year student with strong interest in Machine Learning, Data Analysis and AI solutions.</p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+        <div class="glass">Python</div>
+        <div class="glass">Java</div>
+        <div class="glass">Git</div>
+        <div class="glass">GitHub</div>
+        <div class="glass">Power BI</div>
+        <div class="glass">Tableau</div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2>Services</h2>
+    <div class="grid">
+        <div class="glass">
+            <h3>Dashboard Creation</h3>
+            <p>Interactive dashboards using Power BI & Tableau.</p>
+        </div>
+        <div class="glass">
+            <h3>Machine Learning</h3>
+            <p>Basic ML models using Python and data preprocessing.</p>
+        </div>
+        <div class="glass">
+            <h3>Portfolio Websites</h3>
+            <p>Simple responsive portfolio websites with modern design.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="glass">
+        <h3>AI Powered Stick for Blind People</h3>
+        <p>Smart assistive device using AI and sensors for obstacle detection to help visually impaired people navigate safely.</p>
+    </div>
+    <div class="glass">
+        <h3>PCA Mini Project</h3>
+        <p>Implemented Principal Component Analysis using Python for dimensionality reduction and improved ML efficiency.</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="glass">
+        <h2>Contact Me</h2>
+        <p>Email: chandudivya09@gmail.com</p>
+        <p>Phone: 9392541282</p>
+        <p>Location: Tirupati</p>
+        <p>GitHub: chandupapa</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 D. Chandana | All Rights Reserved
+</footer>
+
+</body>
+</html>
